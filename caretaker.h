@@ -11,6 +11,7 @@ class Caretaker
 public:
     patient* assignedPatients[3];  // max 3 patients
     QString name;
+    QString relation;
     QString contactinfo;
 
     Caretaker(const QString& n, const QString& c);

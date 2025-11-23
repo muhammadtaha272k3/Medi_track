@@ -115,6 +115,11 @@ void patient::setWeightKg(double w_kg) {
     weight_lb = w_kg * 2.20462;
 }
 
+void patient::setWeightlb(double w_lb) {
+    weight_lb = w_lb;
+    weight_kg = w_lb * 0.453592;
+}
+
 void patient::setHeight(const QString& h) { height = h; }
 
 void patient::setBloodGroup(const QString& bg) { bloodGroup = bg; }

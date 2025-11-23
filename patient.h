@@ -18,7 +18,7 @@ private:
     int age;
     double weight_kg;
     double weight_lb;
-    QString height;
+    QString height;//storing height in cm by default;
     QString bloodGroup;
     QString gender;
     QString contactInfo;
@@ -80,6 +80,7 @@ public:
     void setDateOfBirth(const QString& dob);
     void setAge(int a);
     void setWeightKg(double w_kg);
+    void setWeightlb(double w_lb);
     void setHeight(const QString& h);
     void setBloodGroup(const QString& bg);
     void setGender(const QString& g);

@@ -1,8 +1,11 @@
 #include <QString>
 #include <Qdebug>
 #include "signup.h"
+#include "addmoredetails.h"
 #include "ui_signup.h"
 #include "mainmenu.h"
+#include "patient.h"
+
 
 signup::signup(QWidget *parent)
     : QDialog(parent)
@@ -41,20 +44,25 @@ void signup::on_label_6_linkActivated(const QString &link)
 
 void signup::on_pushButton_2_clicked()
 {
-    QString first = ui->label_2->text();
-    QString last = ui->label_3->text();
-    QString User = ui->label->text();
-    QString user pass = ui->label->text();
+    QString first = ui->lineEdit->text();
+    QString last = ui->lineEdit_3->text();
+    QString User = ui->lineEdit_2->text();
+    QString user_pass = ui->lineEdit_4->text();
+    QString date_of_birth = ui->label_6->text();
 
-    mainmenu m;
-    m.setModal(true);
-    m.exec();
+    patient * p = new patient(first,last,date_of_birth,User,user_pass);
 
+    hide();
+    addmoredetails *m = new addmoredetails(*p);
+    m->setModal(true);
+    m->exec();
 }
 
 
 void signup::on_pushButton_clicked()
 {
-
+    hide();
+    mainmenu m;
+    m.show();
 }
 

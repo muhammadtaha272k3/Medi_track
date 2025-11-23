@@ -23,7 +23,12 @@ qt_add_executable(medi_track_2
     caretaker.h caretaker.cpp
     queue.h
     month.h month.cpp
-    sample.h sample.cpp sample.ui
+    addmediciaddmedicineaddmedicine.ui addmedicine.ui
+    addmoredetails.h addmoredetails.cpp addmoredetails.ui
+
+    graphshow.h graphshow.cpp graphshow.ui
+    calorieintake.h calorieintake.cpp
+    addmedicine.h addmedicine.cpp addmedicine.ui
 
 )
 

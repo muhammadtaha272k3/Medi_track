@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>806</width>
-    <height>530</height>
+    <width>773</width>
+    <height>677</height>
    </rect>
   </property>
   <property name="font">
@@ -25,15 +25,12 @@
    <iconset theme="QIcon::ThemeIcon::CameraWeb"/>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-
-
-</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
     <string notr="true">#centralwidget{
-	border-image: url(:/images/Myresources/background.png);
+	background-image: url(:/images/Myresources/background.png);
 }</string>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
@@ -181,6 +178,13 @@
                    </property>
                    <property name="text">
                     <string>welcome</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
                    </property>
                   </widget>
                  </item>
@@ -339,6 +343,13 @@ background-color: transparent;
              </property>
              <property name="text">
               <string>new ? please sign up</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
             </widget>
            </item>

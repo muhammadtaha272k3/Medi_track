@@ -8,6 +8,7 @@ private:
     QString name;
     QString dosage;
     QString time;
+    bool taken;
 
 public:
     Medicine();
@@ -17,12 +18,13 @@ public:
     QString getName() const;
     QString getDosage() const;
     QString getTime() const;
+    bool gettake() const;
 
     // Setters
     void setName(const QString& name);
     void setDosage(const QString& dosage);
     void setTime(const QString& time);
-
+    bool settake(const bool& check);
     QString toString() const;
 };
 
